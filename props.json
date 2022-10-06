@@ -1,0 +1,143 @@
+{
+    "core": {
+        "id": "ccbd0782-7dd0-5d63-9321-d15678eb0b48",
+        "name": "mtb-template-cat2",
+        "version": "1.0.0.29660"
+    },
+    "opt": {
+        "props": {
+            "TemplateData": {
+                "CCG3": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/pmg1s2.txt"
+                    ]
+                },
+                "CCG3PA": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/pmg1s0.txt"
+                    ]
+                },
+                "CCG6": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/pmg1s1.txt"
+                    ]
+                },
+                "CCG7D": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/ccg7d.txt"
+                    ]
+                },
+                "CCG7S": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/ccg7s.txt"
+                    ]
+                },
+                "PAG2S": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/pag2s.txt"
+                    ]
+                },
+                "PMG1S3": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/pmg1s3.txt"
+                    ]
+                },
+                "PSoC4AMC": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/cy8c45x8.txt"
+                    ]
+                },
+                "PSoC4AS1": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/cy8c40x5.txt"
+                    ]
+                },
+                "PSoC4AS2": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/cy8c41x6.txt"
+                    ]
+                },
+                "PSoC4AS3": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/cy8c41x7.txt"
+                    ]
+                },
+                "PSoC4AS4": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/cy8c4xx9.txt"
+                    ]
+                },
+                "PSoC4ASF2": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/cy8c40x6.txt"
+                    ]
+                },
+                "udd_key": "DeviceDie"
+            },
+            "define_sets": {
+                "cat2_defines": [
+                    {
+                        "description": "Option to indicate that the Hardware Abstraction Layer APIs are expected to be used. This will cause the BSP to add calls to initialize the system functions.",
+                        "display": "Using HAL interface",
+                        "options": [
+                            {
+                                "default": false,
+                                "define": "CY_USING_HAL",
+                                "display": "CY_USING_HAL",
+                                "value": ""
+                            }
+                        ],
+                        "type": "choice"
+                    }
+                ]
+            },
+            "dependency_sets": {
+                "cat2_dependencies": [
+                    "deps/core-lib.mtbx",
+                    "deps/core-make.mtbx",
+                    "deps/mtb-pdl-cat2.mtbx",
+                    "deps/recipe-make-cat2.mtbx"
+                ]
+            }
+        }
+    }
+}

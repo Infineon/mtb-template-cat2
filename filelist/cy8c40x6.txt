@@ -1,0 +1,7 @@
+files/templates/COMPONENT_MTB/system_cat2.h:system_cat2.h
+files/templates/COMPONENT_MTB/system_cat2.c:system_cat2.c
+files/templates/COMPONENT_MTB/startup_psoc4000t.c:startup_psoc4000t.c
+
+files/templates/COMPONENT_MTB/TOOLCHAIN_ARM/cy8c4xx6.sct:TOOLCHAIN_ARM/cy8c4xx6.sct
+files/templates/COMPONENT_MTB/TOOLCHAIN_GCC_ARM/cy8c4xx6.ld:TOOLCHAIN_GCC_ARM/cy8c4xx6.ld
+files/templates/COMPONENT_MTB/TOOLCHAIN_IAR/cy8c4xx6.icf:TOOLCHAIN_IAR/cy8c4xx6.icf

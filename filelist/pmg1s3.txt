@@ -1,0 +1,7 @@
+files/templates/COMPONENT_MTB/system_cat2.h:system_cat2.h
+files/templates/COMPONENT_MTB/system_cat2.c:system_cat2.c
+files/templates/COMPONENT_MTB/startup_pmg1s3.c:startup_pmg1s3.c
+
+files/templates/COMPONENT_MTB/TOOLCHAIN_ARM/pmg1s3.sct:TOOLCHAIN_ARM/pmg1s3.sct
+files/templates/COMPONENT_MTB/TOOLCHAIN_GCC_ARM/pmg1s3.ld:TOOLCHAIN_GCC_ARM/pmg1s3.ld
+files/templates/COMPONENT_MTB/TOOLCHAIN_IAR/pmg1s3.icf:TOOLCHAIN_IAR/pmg1s3.icf

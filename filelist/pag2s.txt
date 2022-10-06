@@ -1,0 +1,7 @@
+files/templates/COMPONENT_MTB/system_cat2.h:system_cat2.h
+files/templates/COMPONENT_MTB/system_cat2.c:system_cat2.c
+files/templates/COMPONENT_MTB/startup_pag2s.c:startup_pag2s.c
+
+files/templates/COMPONENT_MTB/TOOLCHAIN_ARM/pag2s.sct:TOOLCHAIN_ARM/pag2s.sct
+files/templates/COMPONENT_MTB/TOOLCHAIN_GCC_ARM/pag2s.ld:TOOLCHAIN_GCC_ARM/pag2s.ld
+files/templates/COMPONENT_MTB/TOOLCHAIN_IAR/pag2s.icf:TOOLCHAIN_IAR/pag2s.icf
