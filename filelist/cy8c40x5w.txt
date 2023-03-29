@@ -1,6 +1,6 @@
 files/templates/COMPONENT_MTB/system_cat2.h:system_cat2.h
 files/templates/COMPONENT_MTB/system_cat2.c:system_cat2.c
-files/templates/COMPONENT_MTB/startup_psoc4000s.c:startup_psoc4000s.c
+files/templates/COMPONENT_MTB/startup_psoc4000t.c:startup_psoc4000t.c
 
 files/templates/COMPONENT_MTB/TOOLCHAIN_ARM/cy8c4xx5.sct:TOOLCHAIN_ARM/linker.sct
 files/templates/COMPONENT_MTB/TOOLCHAIN_GCC_ARM/cy8c4xx5.ld:TOOLCHAIN_GCC_ARM/linker.ld

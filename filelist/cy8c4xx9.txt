@@ -2,6 +2,6 @@ files/templates/COMPONENT_MTB/system_cat2.h:system_cat2.h
 files/templates/COMPONENT_MTB/system_cat2.c:system_cat2.c
 files/templates/COMPONENT_MTB/startup_psoc4100smax.c:startup_psoc4100smax.c
 
-files/templates/COMPONENT_MTB/TOOLCHAIN_ARM/cy8c4xx9.sct:TOOLCHAIN_ARM/cy8c4xx9.sct
-files/templates/COMPONENT_MTB/TOOLCHAIN_GCC_ARM/cy8c4xx9.ld:TOOLCHAIN_GCC_ARM/cy8c4xx9.ld
-files/templates/COMPONENT_MTB/TOOLCHAIN_IAR/cy8c4xx9.icf:TOOLCHAIN_IAR/cy8c4xx9.icf
+files/templates/COMPONENT_MTB/TOOLCHAIN_ARM/cy8c4xx9.sct:TOOLCHAIN_ARM/linker.sct
+files/templates/COMPONENT_MTB/TOOLCHAIN_GCC_ARM/cy8c4xx9.ld:TOOLCHAIN_GCC_ARM/linker.ld
+files/templates/COMPONENT_MTB/TOOLCHAIN_IAR/cy8c4xx9.icf:TOOLCHAIN_IAR/linker.icf

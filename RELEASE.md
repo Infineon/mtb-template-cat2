@@ -1,6 +1,10 @@
-# mtb-template-cat2 Release Notes
+# ModusToolbox CAT2 BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.1.0
+* Change filenames for linker scripts and startup code
+* Fix linker script not matching device memory in some situations.
+* Add `cybsp_hw_config.h` to fileset.
 #### v1.0.0
 Initial release
 

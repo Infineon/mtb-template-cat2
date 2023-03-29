@@ -2,7 +2,7 @@
     "core": {
         "id": "ccbd0782-7dd0-5d63-9321-d15678eb0b48",
         "name": "mtb-template-cat2",
-        "version": "1.0.0.29660"
+        "version": "1.1.0.31742"
     },
     "opt": {
         "props": {
@@ -64,52 +64,142 @@
                     ]
                 },
                 "PSoC4AMC": {
-                    "defines": "cat2_defines",
-                    "deps": "cat2_dependencies",
-                    "files": [
-                        "filelist/cat2.txt",
-                        "filelist/cy8c45x8.txt"
-                    ]
+                    "128": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c45x7.txt"
+                        ]
+                    },
+                    "256": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c45x8.txt"
+                        ]
+                    },
+                    "64": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c45x6.txt"
+                        ]
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "PSoC4AS1": {
-                    "defines": "cat2_defines",
-                    "deps": "cat2_dependencies",
-                    "files": [
-                        "filelist/cat2.txt",
-                        "filelist/cy8c40x5.txt"
-                    ]
+                    "16": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c40x4.txt"
+                        ]
+                    },
+                    "32": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c40x5.txt"
+                        ]
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "PSoC4AS2": {
-                    "defines": "cat2_defines",
-                    "deps": "cat2_dependencies",
-                    "files": [
-                        "filelist/cat2.txt",
-                        "filelist/cy8c41x6.txt"
-                    ]
+                    "16": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x4.txt"
+                        ]
+                    },
+                    "32": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x5.txt"
+                        ]
+                    },
+                    "64": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x6.txt"
+                        ]
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "PSoC4AS3": {
-                    "defines": "cat2_defines",
-                    "deps": "cat2_dependencies",
-                    "files": [
-                        "filelist/cat2.txt",
-                        "filelist/cy8c41x7.txt"
-                    ]
+                    "128": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x7.txt"
+                        ]
+                    },
+                    "64": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x6w.txt"
+                        ]
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "PSoC4AS4": {
-                    "defines": "cat2_defines",
-                    "deps": "cat2_dependencies",
-                    "files": [
-                        "filelist/cat2.txt",
-                        "filelist/cy8c4xx9.txt"
-                    ]
+                    "128": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c4xx7.txt"
+                        ]
+                    },
+                    "256": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c4xx8.txt"
+                        ]
+                    },
+                    "384": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c4xx9.txt"
+                        ]
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "PSoC4ASF2": {
-                    "defines": "cat2_defines",
-                    "deps": "cat2_dependencies",
-                    "files": [
-                        "filelist/cat2.txt",
-                        "filelist/cy8c40x6.txt"
-                    ]
+                    "32": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c40x5w.txt"
+                        ]
+                    },
+                    "64": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c40x6.txt"
+                        ]
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "udd_key": "DeviceDie"
             },
