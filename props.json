@@ -2,7 +2,7 @@
     "core": {
         "id": "ccbd0782-7dd0-5d63-9321-d15678eb0b48",
         "name": "mtb-template-cat2",
-        "version": "1.1.0.31742"
+        "version": "1.2.0.32855"
     },
     "opt": {
         "props": {
@@ -13,7 +13,8 @@
                     "files": [
                         "filelist/cat2.txt",
                         "filelist/pmg1s2.txt"
-                    ]
+                    ],
+                    "files_init": "filelist/init_ccg3_ccg7d.txt"
                 },
                 "CCG3PA": {
                     "defines": "cat2_defines",
@@ -21,7 +22,8 @@
                     "files": [
                         "filelist/cat2.txt",
                         "filelist/pmg1s0.txt"
-                    ]
+                    ],
+                    "files_init": "filelist/init_ccg3pa.txt"
                 },
                 "CCG6": {
                     "defines": "cat2_defines",
@@ -29,7 +31,8 @@
                     "files": [
                         "filelist/cat2.txt",
                         "filelist/pmg1s1.txt"
-                    ]
+                    ],
+                    "files_init": "filelist/init_ccg6.txt"
                 },
                 "CCG7D": {
                     "defines": "cat2_defines",
@@ -37,7 +40,8 @@
                     "files": [
                         "filelist/cat2.txt",
                         "filelist/ccg7d.txt"
-                    ]
+                    ],
+                    "files_init": "filelist/init_ccg3_ccg7d.txt"
                 },
                 "CCG7S": {
                     "defines": "cat2_defines",
@@ -45,7 +49,8 @@
                     "files": [
                         "filelist/cat2.txt",
                         "filelist/ccg7s.txt"
-                    ]
+                    ],
+                    "files_init": "filelist/init_ccg7s.txt"
                 },
                 "PAG2S": {
                     "defines": "cat2_defines",
@@ -53,7 +58,8 @@
                     "files": [
                         "filelist/cat2.txt",
                         "filelist/pag2s.txt"
-                    ]
+                    ],
+                    "files_init": "filelist/init_pag2s.txt"
                 },
                 "PMG1S3": {
                     "defines": "cat2_defines",
@@ -61,7 +67,8 @@
                     "files": [
                         "filelist/cat2.txt",
                         "filelist/pmg1s3.txt"
-                    ]
+                    ],
+                    "files_init": "filelist/init_pmg1s3.txt"
                 },
                 "PSoC4AMC": {
                     "128": {
@@ -70,7 +77,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c45x7.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "256": {
                         "defines": "cat2_defines",
@@ -78,7 +86,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c45x8.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "64": {
                         "defines": "cat2_defines",
@@ -86,7 +95,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c45x6.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "udd_key": "Flash_KB"
                 },
@@ -97,7 +107,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c40x4.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "32": {
                         "defines": "cat2_defines",
@@ -105,7 +116,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c40x5.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "udd_key": "Flash_KB"
                 },
@@ -116,7 +128,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c41x4.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "32": {
                         "defines": "cat2_defines",
@@ -124,7 +137,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c41x5.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "64": {
                         "defines": "cat2_defines",
@@ -132,7 +146,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c41x6.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "udd_key": "Flash_KB"
                 },
@@ -143,7 +158,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c41x7.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "64": {
                         "defines": "cat2_defines",
@@ -151,7 +167,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c41x6w.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "udd_key": "Flash_KB"
                 },
@@ -162,7 +179,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c4xx7.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "256": {
                         "defines": "cat2_defines",
@@ -170,7 +188,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c4xx8.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "384": {
                         "defines": "cat2_defines",
@@ -178,7 +197,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c4xx9.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "udd_key": "Flash_KB"
                 },
@@ -189,7 +209,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c40x5w.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "64": {
                         "defines": "cat2_defines",
@@ -197,7 +218,8 @@
                         "files": [
                             "filelist/cat2.txt",
                             "filelist/cy8c40x6.txt"
-                        ]
+                        ],
+                        "files_init": "filelist/init_psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.txt"
                     },
                     "udd_key": "Flash_KB"
                 },
