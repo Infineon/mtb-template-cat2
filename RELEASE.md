@@ -1,6 +1,8 @@
 # ModusToolbox CAT2 BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.2.1
+* Added explicit include for `cycfg_pins.h` in `cybsp_hw_config.h`
 #### v1.2.0
 * Added support for BSP Assistant chip flow
 * Update MTBX dependencies to use MTB 3.0 Query APIs
