@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration app="BACKEND" formatVersion="13" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.0.0" toolsPackage="ModusToolbox 3.0.0" xmlns="http://cypress.com/xsd/cydesignfile_v4">
     <Devices>
-        <Device mpn="CY8C4045AZI-S413">
+        <Device mpn="CY8C4146LQS-S253">
             <BlockConfig>
                 <Block location="cpuss[0].dap[0]">
                     <Personality template="m0s8dap" version="1.0">
                         <Param id="dbgMode" value="SWD"/>
-                    </Personality>
-                </Block>
-                <Block location="ioss[0].port[2].pin[0]">
-                    <Personality template="m0s8pin" version="2.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="inFlash" value="true"/>
-                        <Param id="portLevelConfig" value="false"/>
-                    </Personality>
-                </Block>
-                <Block location="ioss[0].port[2].pin[1]">
-                    <Personality template="m0s8pin" version="2.0">
-                        <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
-                        <Param id="initialState" value="1"/>
-                        <Param id="vtrip" value="CY_GPIO_VTRIP_CMOS"/>
-                        <Param id="isrTrigger" value="CY_GPIO_INTR_DISABLE"/>
-                        <Param id="slewRate" value="CY_GPIO_SLEW_FAST"/>
-                        <Param id="inFlash" value="true"/>
-                        <Param id="portLevelConfig" value="false"/>
                     </Personality>
                 </Block>
                 <Block location="ioss[0].port[3].pin[2]">

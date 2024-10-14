@@ -8,7 +8,7 @@
                         <Param id="dbgMode" value="SWD"/>
                     </Personality>
                 </Block>
-                <Block location="ioss[0].port[4].pin[0]">
+                <Block location="ioss[0].port[1].pin[1]">
                     <Personality template="m0s8pin" version="2.0">
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
                         <Param id="initialState" value="1"/>
@@ -19,7 +19,7 @@
                         <Param id="portLevelConfig" value="false"/>
                     </Personality>
                 </Block>
-                <Block location="ioss[0].port[4].pin[1]">
+                <Block location="ioss[0].port[1].pin[2]">
                     <Personality template="m0s8pin" version="2.0">
                         <Param id="DriveModes" value="CY_GPIO_DM_STRONG"/>
                         <Param id="initialState" value="1"/>
@@ -54,11 +54,11 @@
             <Netlist>
                 <Net>
                     <Port name="cpuss[0].dap[0].swd_clk[0]"/>
-                    <Port name="ioss[0].port[4].pin[0].digital_in[0]"/>
+                    <Port name="ioss[0].port[1].pin[1].digital_in[0]"/>
                 </Net>
                 <Net>
                     <Port name="cpuss[0].dap[0].swd_data[0]"/>
-                    <Port name="ioss[0].port[4].pin[1].digital_inout[0]"/>
+                    <Port name="ioss[0].port[1].pin[2].digital_inout[0]"/>
                 </Net>
             </Netlist>
         </Device>

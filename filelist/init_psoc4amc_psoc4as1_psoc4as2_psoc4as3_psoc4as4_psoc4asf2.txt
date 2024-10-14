@@ -1,3 +1,0 @@
-files_init/props.json:props.json
-files_init/bsp.mk:bsp.mk
-files_init/psoc4amc_psoc4as1_psoc4as2_psoc4as3_psoc4as4_psoc4asf2.modus:config/design.modus
