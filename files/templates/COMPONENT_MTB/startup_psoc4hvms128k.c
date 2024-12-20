@@ -1,5 +1,5 @@
 /******************************************************************************
- * @file     startup_ccg7d.c
+ * @file     startup_psoc4hvms128k.c
  * @brief    CMSIS-Core(M) Device Startup File for Category 2 device
  * @version  V2.1.0
  * @date     10. June 2024
@@ -78,26 +78,37 @@ void SVC_Handler                        (void) __attribute__ ((weak, alias("Defa
 void PendSV_Handler                     (void) __attribute__ ((weak, alias("Default_Handler")));
 void SysTick_Handler                    (void) __attribute__ ((weak, alias("Default_Handler")));
 
+void srss_interrupt_srss_IRQHandler     (void) __attribute__ ((weak, alias("Default_Handler"))); /* SRSS interrupts */
+void srss_wdt_irq_IRQHandler            (void) __attribute__ ((weak, alias("Default_Handler"))); /* WDT Interrupt */
+void ioss_interrupt_gpio_IRQHandler     (void) __attribute__ ((weak, alias("Default_Handler"))); /* GPIO consolidated interrupt */
 void ioss_interrupts_gpio_0_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* GPIO P0 */
 void ioss_interrupts_gpio_1_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* GPIO P1 */
 void ioss_interrupts_gpio_2_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* GPIO P2 */
-void ioss_interrupts_gpio_3_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* GPIO P3 */
-void ioss_interrupt_gpio_IRQHandler     (void) __attribute__ ((weak, alias("Default_Handler"))); /* GPIO All ports */
-void usbpd_0_interrupt_wakeup_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* Ganged USBPD[0] Interrupt */
-void usbpd_1_interrupt_wakeup_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* Ganged USBPD[1] Interrupt */
-void srss_interrupt_wdt_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* WDT or Temp (WDT only in DeepSleep) */
-void scb_0_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB[0] */
-void scb_1_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB[1] */
-void scb_2_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB[2] */
-void scb_3_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB[3] */
-void cpuss_interrupt_spcif_IRQHandler   (void) __attribute__ ((weak, alias("Default_Handler"))); /* SPC */
-void usbpd_0_interrupt_IRQHandler       (void) __attribute__ ((weak, alias("Default_Handler"))); /* Synchronous USBPD[0] Interrupts */
-void usbpd_1_interrupt_IRQHandler       (void) __attribute__ ((weak, alias("Default_Handler"))); /* Synchronous USBPD[1] Interrupts */
-void tcpwm_interrupts_0_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM counter #0 */
-void tcpwm_interrupts_1_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM counter #1 */
-void tcpwm_interrupts_2_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM counter #2 */
-void tcpwm_interrupts_3_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM counter #3 */
-void crypto_interrupt_IRQHandler        (void) __attribute__ ((weak, alias("Default_Handler"))); /* Crypto block */
+void hvss_interrupt_hvss_IRQHandler     (void) __attribute__ ((weak, alias("Default_Handler"))); /* HVSS interface interrupt */
+void lpcomp_interrupt_IRQHandler        (void) __attribute__ ((weak, alias("Default_Handler"))); /* LPCOMP#0 trigger interrupt */
+void scb_0_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB #0 interrupt */
+void scb_1_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB #0 interrupt */
+void pass_0_interrupt_ctbs_IRQHandler   (void) __attribute__ ((weak, alias("Default_Handler"))); /* CTBm */
+void scb_2_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB #2 interrupt */
+void scb_3_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* SCB #3 interrupt */
+void cpuss_interrupt_dma_IRQHandler     (void) __attribute__ ((weak, alias("Default_Handler"))); /* DMA Interrupt */
+void cpuss_interrupt_spcif_IRQHandler   (void) __attribute__ ((weak, alias("Default_Handler"))); /* SPCIF interrupt */
+void cpuss_interrupt_fault_0_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* Fault structure 0 interrupt */
+void cpuss_interrupt_fault_1_IRQHandler  (void) __attribute__ ((weak, alias("Default_Handler"))); /* Fault structure 1 interrupt */
+void lin_interrupts_0_IRQHandler        (void) __attribute__ ((weak, alias("Default_Handler"))); /* LIN interrupt, channel #0 */
+void lin_interrupts_1_IRQHandler        (void) __attribute__ ((weak, alias("Default_Handler"))); /* LIN interrupt, channel #1 */
+void tcpwm_interrupts_0_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #0 */
+void tcpwm_interrupts_1_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #1 */
+void tcpwm_interrupts_2_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #2 */
+void tcpwm_interrupts_3_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #3 */
+void tcpwm_interrupts_4_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #4 */
+void pass_0_interrupt_sar_IRQHandler    (void) __attribute__ ((weak, alias("Default_Handler"))); /* SAR */
+void msc_0_interrupt_IRQHandler         (void) __attribute__ ((weak, alias("Default_Handler"))); /* CSD */
+void cxpi_interrupts_0_IRQHandler       (void) __attribute__ ((weak, alias("Default_Handler"))); /* CXPI interrupt, channel #0 */
+void cxpi_interrupts_1_IRQHandler       (void) __attribute__ ((weak, alias("Default_Handler"))); /* CXPI interrupt, channel #1 */
+void tcpwm_interrupts_5_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #5 */
+void tcpwm_interrupts_6_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #6 */
+void tcpwm_interrupts_7_IRQHandler      (void) __attribute__ ((weak, alias("Default_Handler"))); /* TCPWM #0, Counter #7 */
 
 
 /*----------------------------------------------------------------------------
@@ -124,26 +135,37 @@ extern const cy_israddress __VECTOR_TABLE[CY_VECTOR_TABLE_SIZE];
     SysTick_Handler,                          /*  -1 SysTick Handler */
 
     /* Interrupts */
-    ioss_interrupts_gpio_0_IRQHandler,        /*   0 GPIO P0 */
-    ioss_interrupts_gpio_1_IRQHandler,        /*   1 GPIO P1 */
-    ioss_interrupts_gpio_2_IRQHandler,        /*   2 GPIO P2 */
-    ioss_interrupts_gpio_3_IRQHandler,        /*   3 GPIO P3 */
-    ioss_interrupt_gpio_IRQHandler,           /*   4 GPIO All ports */
-    usbpd_0_interrupt_wakeup_IRQHandler,      /*   5 Ganged USBPD[0] Interrupt */
-    usbpd_1_interrupt_wakeup_IRQHandler,      /*   6 Ganged USBPD[1] Interrupt */
-    srss_interrupt_wdt_IRQHandler,            /*   7 WDT or Temp (WDT only in DeepSleep) */
-    scb_0_interrupt_IRQHandler,               /*   8 SCB[0] */
-    scb_1_interrupt_IRQHandler,               /*   9 SCB[1] */
-    scb_2_interrupt_IRQHandler,               /*  10 SCB[2] */
-    scb_3_interrupt_IRQHandler,               /*  11 SCB[3] */
-    cpuss_interrupt_spcif_IRQHandler,         /*  12 SPC */
-    usbpd_0_interrupt_IRQHandler,             /*  13 Synchronous USBPD[0] Interrupts */
-    usbpd_1_interrupt_IRQHandler,             /*  14 Synchronous USBPD[1] Interrupts */
-    tcpwm_interrupts_0_IRQHandler,            /*  15 TCPWM counter #0 */
-    tcpwm_interrupts_1_IRQHandler,            /*  16 TCPWM counter #1 */
-    tcpwm_interrupts_2_IRQHandler,            /*  17 TCPWM counter #2 */
-    tcpwm_interrupts_3_IRQHandler,            /*  18 TCPWM counter #3 */
-    crypto_interrupt_IRQHandler               /*  19 Crypto block */
+    srss_interrupt_srss_IRQHandler,           /*   0 SRSS interrupts */
+    srss_wdt_irq_IRQHandler,                  /*   1 WDT Interrupt */
+    ioss_interrupt_gpio_IRQHandler,           /*   2 GPIO consolidated interrupt */
+    ioss_interrupts_gpio_0_IRQHandler,        /*   3 GPIO P0 */
+    ioss_interrupts_gpio_1_IRQHandler,        /*   4 GPIO P1 */
+    ioss_interrupts_gpio_2_IRQHandler,        /*   5 GPIO P2 */
+    hvss_interrupt_hvss_IRQHandler,           /*   6 HVSS interface interrupt */
+    lpcomp_interrupt_IRQHandler,              /*   7 LPCOMP#0 trigger interrupt */
+    scb_0_interrupt_IRQHandler,               /*   8 SCB #0 interrupt */
+    scb_1_interrupt_IRQHandler,               /*   9 SCB #0 interrupt */
+    pass_0_interrupt_ctbs_IRQHandler,         /*  10 CTBm */
+    scb_2_interrupt_IRQHandler,               /*  11 SCB #2 interrupt */
+    scb_3_interrupt_IRQHandler,               /*  12 SCB #3 interrupt */
+    cpuss_interrupt_dma_IRQHandler,           /*  13 DMA Interrupt */
+    cpuss_interrupt_spcif_IRQHandler,         /*  14 SPCIF interrupt */
+    cpuss_interrupt_fault_0_IRQHandler,       /*  15 Fault structure 0 interrupt */
+    cpuss_interrupt_fault_1_IRQHandler,       /*  16 Fault structure 1 interrupt */
+    lin_interrupts_0_IRQHandler,              /*  17 LIN interrupt, channel #0 */
+    lin_interrupts_1_IRQHandler,              /*  18 LIN interrupt, channel #1 */
+    tcpwm_interrupts_0_IRQHandler,            /*  19 TCPWM #0, Counter #0 */
+    tcpwm_interrupts_1_IRQHandler,            /*  20 TCPWM #0, Counter #1 */
+    tcpwm_interrupts_2_IRQHandler,            /*  21 TCPWM #0, Counter #2 */
+    tcpwm_interrupts_3_IRQHandler,            /*  22 TCPWM #0, Counter #3 */
+    tcpwm_interrupts_4_IRQHandler,            /*  23 TCPWM #0, Counter #4 */
+    pass_0_interrupt_sar_IRQHandler,          /*  24 SAR */
+    msc_0_interrupt_IRQHandler,               /*  25 CSD */
+    cxpi_interrupts_0_IRQHandler,             /*  26 CXPI interrupt, channel #0 */
+    cxpi_interrupts_1_IRQHandler,             /*  27 CXPI interrupt, channel #1 */
+    tcpwm_interrupts_5_IRQHandler,            /*  28 TCPWM #0, Counter #5 */
+    tcpwm_interrupts_6_IRQHandler,            /*  29 TCPWM #0, Counter #6 */
+    tcpwm_interrupts_7_IRQHandler             /*  30 TCPWM #0, Counter #7 */
 };
 
 #if defined (__GNUC__)

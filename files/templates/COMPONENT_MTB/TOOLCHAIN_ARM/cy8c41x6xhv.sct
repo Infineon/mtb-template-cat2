@@ -3,7 +3,7 @@
 ; to pass a scatter file through a C preprocessor.
 
 ;*******************************************************************************
-;* \file cy8c41x6xhvs.sct
+;* \file cy8c41x6xhv.sct
 ;* \version 2.0.0
 ;*
 ;* Linker file for the ARMCC.
@@ -57,7 +57,7 @@
 ; </h>
  *----------------------------------------------------------------------------*/
 #define __RAM_START     0x20000000
-#define __RAM_SIZE      0x00002000
+#define __RAM_SIZE      0x00001000
 
 /*--------------------- Flash Configuration ----------------------------------
 ; <h> Flash Configuration

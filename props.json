@@ -2,7 +2,7 @@
     "core": {
         "id": "ccbd0782-7dd0-5d63-9321-d15678eb0b48",
         "name": "mtb-template-cat2",
-        "version": "1.3.0.43716"
+        "version": "1.4.0.44639"
     },
     "opt": {
         "props": {
@@ -69,6 +69,36 @@
                         "filelist/pmg1s3.txt"
                     ],
                     "files_init": "filelist/init_pmg1s3.txt"
+                },
+                "PSOC4HVMS128K": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/cy8c41x7xhvs.txt"
+                    ],
+                    "files_init": "filelist/init_psoc4hvms128k.txt"
+                },
+                "PSOC4HVMS64K": {
+                    "32": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x5xhvs.txt"
+                        ],
+                        "files_init": "filelist/init_psoc4hvms64k.txt"
+                    },
+                    "64": {
+                        "defines": "cat2_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x6xhvs.txt"
+                        ],
+                        "files_init": "filelist/init_psoc4hvms64k.txt"
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "PSoC4AMC": {
                     "128": {
