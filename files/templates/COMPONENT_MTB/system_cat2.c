@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file system_cat2.c
-* \version 2.0
+* \version 2.1
 *
 * The device system-source file.
 *

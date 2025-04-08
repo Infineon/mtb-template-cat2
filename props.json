@@ -2,7 +2,7 @@
     "core": {
         "id": "ccbd0782-7dd0-5d63-9321-d15678eb0b48",
         "name": "mtb-template-cat2",
-        "version": "1.4.0.44639"
+        "version": "1.4.1.45726"
     },
     "opt": {
         "props": {
@@ -99,6 +99,15 @@
                         "files_init": "filelist/init_psoc4hvms64k.txt"
                     },
                     "udd_key": "Flash_KB"
+                },
+                "PSOC4NEXT": {
+                    "defines": "cat2_defines",
+                    "deps": "cat2_dependencies",
+                    "files": [
+                        "filelist/cat2.txt",
+                        "filelist/psoc4next.txt"
+                    ],
+                    "files_init": "filelist/init_psoc4next.txt"
                 },
                 "PSoC4AMC": {
                     "128": {

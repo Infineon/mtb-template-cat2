@@ -1,8 +1,10 @@
 # ModusToolbox CAT2 BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.4.1
+* Add support for PSOC4NEXT part
 #### v1.4.0
-* Add support for PSOC4HVMS parts
+* Add support for PSOC4HVMS part
 #### v1.3.0
 * Added support CCGDF_CFP
 * Bugfixes for null pins

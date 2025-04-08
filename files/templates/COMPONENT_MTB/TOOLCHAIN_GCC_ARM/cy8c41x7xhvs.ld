@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file cy8c41x7xhvs.ld
-* \version 1.10.1
+* \version 2.0.0
 *
 * Linker file for the GNU C compiler.
 *
@@ -19,7 +19,7 @@
 *
 ********************************************************************************
 * \copyright
-* (c) (2019-2021), Cypress Semiconductor Corporation (an Infineon company) or
+* (c) (2019-2024), Cypress Semiconductor Corporation (an Infineon company) or
 * an affiliate of Cypress Semiconductor Corporation.
 *
 * SPDX-License-Identifier: Apache-2.0
@@ -349,6 +349,6 @@ SECTIONS
 /* Flash */
 __cy_memory_0_start    = 0x00000000;
 __cy_memory_0_length   = 0x00020000;
-__cy_memory_0_row_size = 0x100;
+__cy_memory_0_row_size = 0x80;
 
 /* EOF */
