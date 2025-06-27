@@ -1,5 +1,5 @@
 /*******************************************************************************
-* \file cy8c41x7xhv.icf
+* \file cy8c41x6xhv.icf
 * \version 2.0.0
 *
 * Linker file for the IAR compiler.
@@ -52,7 +52,7 @@ define symbol __ICFEDIT_intvec_start__ = 0x00000000;
  */
 /* RAM */
 define symbol __ICFEDIT_region_IRAM1_start__ = 0x20000000;
-define symbol __ICFEDIT_region_IRAM1_end__   = 0x20001FFF;
+define symbol __ICFEDIT_region_IRAM1_end__   = 0x20000FFF;
 define symbol __ICFEDIT_region_IRAM2_start__ = 0x0;
 define symbol __ICFEDIT_region_IRAM2_end__   = 0x0;
 define symbol __ICFEDIT_region_IRAM3_start__ = 0x0;
@@ -66,7 +66,7 @@ define symbol __ICFEDIT_region_ERAM3_end__   = 0x0;
 
 /* Flash */
 define symbol __ICFEDIT_region_IROM1_start__ = 0x00000000;
-define symbol __ICFEDIT_region_IROM1_end__   = 0x0001FFFF;
+define symbol __ICFEDIT_region_IROM1_end__   = 0x0000FFFF;
 define symbol __ICFEDIT_region_IROM2_start__ = 0x0;
 define symbol __ICFEDIT_region_IROM2_end__   = 0x0;
 define symbol __ICFEDIT_region_EROM1_end__   = 0x0;
@@ -137,7 +137,7 @@ keep {  section .cy_app_header,
 /* The following symbols used by the cymcuelftool. */
 /* Flash */
 define exported symbol __cy_memory_0_start    = 0x00000000;
-define exported symbol __cy_memory_0_length   = 0x00020000;
+define exported symbol __cy_memory_0_length   = 0x00010000;
 define exported symbol __cy_memory_0_row_size = 0x80;
 
 /* EOF */

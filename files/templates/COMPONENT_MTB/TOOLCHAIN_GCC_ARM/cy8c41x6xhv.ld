@@ -1,5 +1,5 @@
 /***************************************************************************//**
-* \file cy8c41x7xhv.ld
+* \file cy8c41x6xhv.ld
 * \version 2.0.0
 *
 * Linker file for the GNU C compiler.
@@ -48,7 +48,7 @@ GROUP(-lgcc -lc -lnosys)
 ; </h>
  -----------------------------------------------------------------------------*/
 __FLASH_START = 0x00000000;
-__FLASH_SIZE =  0x00020000;
+__FLASH_SIZE =  0x00010000;
 
 /*--------------------- Embedded RAM Configuration ---------------------------
 ; <h> RAM Configuration
@@ -57,7 +57,7 @@ __FLASH_SIZE =  0x00020000;
 ; </h>
  -----------------------------------------------------------------------------*/
 __RAM_START = 0x20000000;
-__RAM_SIZE =  0x00002000;
+__RAM_SIZE =  0x00001000;
 
 /*--------------------- Stack Configuration ----------------------------------
 ; <h> Stack Configuration
@@ -348,7 +348,7 @@ SECTIONS
 /* The following symbols used by the cymcuelftool. */
 /* Flash */
 __cy_memory_0_start    = 0x00000000;
-__cy_memory_0_length   = 0x00020000;
+__cy_memory_0_length   = 0x00010000;
 __cy_memory_0_row_size = 0x80;
 
 /* EOF */

@@ -1,6 +1,10 @@
 # ModusToolbox CAT2 BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.5.0
+* Removed HAL support for PSOC4HVMS parts
+* Updated version of startup_* files
+* Add support for PSOC4HVPA144K part
 #### v1.4.1
 * Add support for PSOC4NEXT part
 #### v1.4.0
@@ -37,4 +41,4 @@ Minimum required ModusToolbox™ Software Environment: v3.0.0
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2022-2023.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2022-2025.

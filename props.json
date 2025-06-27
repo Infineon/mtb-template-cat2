@@ -2,13 +2,13 @@
     "core": {
         "id": "ccbd0782-7dd0-5d63-9321-d15678eb0b48",
         "name": "mtb-template-cat2",
-        "version": "1.4.1.45726"
+        "version": "1.5.0.47033"
     },
     "opt": {
         "props": {
             "TemplateData": {
                 "CCG3": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -17,7 +17,7 @@
                     "files_init": "filelist/init_ccg3.txt"
                 },
                 "CCG3PA": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -26,7 +26,7 @@
                     "files_init": "filelist/init_ccg3pa.txt"
                 },
                 "CCG6": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -35,7 +35,7 @@
                     "files_init": "filelist/init_ccg6.txt"
                 },
                 "CCG6DF_CFP": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -44,7 +44,7 @@
                     "files_init": "filelist/init_ccg6df_cfp.txt"
                 },
                 "CCG7D": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -53,7 +53,7 @@
                     "files_init": "filelist/init_ccg7d.txt"
                 },
                 "CCG7S": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -62,7 +62,7 @@
                     "files_init": "filelist/init_ccg7s.txt"
                 },
                 "PMG1S3": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -70,8 +70,29 @@
                     ],
                     "files_init": "filelist/init_pmg1s3.txt"
                 },
+                "PSOC4HV144K": {
+                    "128": {
+                        "defines": [],
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x7xhv.txt"
+                        ],
+                        "files_init": "filelist/init_psoc4hvpa144k.txt"
+                    },
+                    "64": {
+                        "defines": [],
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x6xhv.txt"
+                        ],
+                        "files_init": "filelist/init_psoc4hvpa144k.txt"
+                    },
+                    "udd_key": "Flash_KB"
+                },
                 "PSOC4HVMS128K": {
-                    "defines": "cat2_defines",
+                    "defines": [],
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -81,7 +102,7 @@
                 },
                 "PSOC4HVMS64K": {
                     "32": {
-                        "defines": "cat2_defines",
+                        "defines": [],
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -90,7 +111,7 @@
                         "files_init": "filelist/init_psoc4hvms64k.txt"
                     },
                     "64": {
-                        "defines": "cat2_defines",
+                        "defines": [],
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -101,7 +122,7 @@
                     "udd_key": "Flash_KB"
                 },
                 "PSOC4NEXT": {
-                    "defines": "cat2_defines",
+                    "defines": "cat2_hal_defines",
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
@@ -111,7 +132,7 @@
                 },
                 "PSoC4AMC": {
                     "128": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -120,7 +141,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "256": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -129,7 +150,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "64": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -141,7 +162,7 @@
                 },
                 "PSoC4AS1": {
                     "16": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -150,7 +171,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "32": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -162,7 +183,7 @@
                 },
                 "PSoC4AS2": {
                     "16": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -171,7 +192,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "32": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -180,7 +201,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "64": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -192,7 +213,7 @@
                 },
                 "PSoC4AS3": {
                     "128": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -201,7 +222,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "64": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -213,7 +234,7 @@
                 },
                 "PSoC4AS4": {
                     "128": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -222,7 +243,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "256": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -231,7 +252,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "384": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -243,7 +264,7 @@
                 },
                 "PSoC4ASF2": {
                     "32": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -252,7 +273,7 @@
                         "files_init": "filelist/init_psoc4amc_psoc4asX.txt"
                     },
                     "64": {
-                        "defines": "cat2_defines",
+                        "defines": "cat2_hal_defines",
                         "deps": "cat2_dependencies",
                         "files": [
                             "filelist/cat2.txt",
@@ -265,7 +286,7 @@
                 "udd_key": "DeviceDie"
             },
             "define_sets": {
-                "cat2_defines": [
+                "cat2_hal_defines": [
                     {
                         "description": "Option to indicate that the Hardware Abstraction Layer APIs are expected to be used. This will cause the BSP to add calls to initialize the system functions.",
                         "display": "Using HAL interface",
