@@ -4,7 +4,7 @@
 
 mtb-template-cat2 provides BSP template files for the BSP Assistant tool. mtb-template-cat2 contains files for the following devices:
 
-* PSoC 4
+* PSOC 4
 * PMG1
 
 ## BSP Configuration
@@ -20,7 +20,7 @@ Defines:
 * [Development Board Documentation](https://www.cypress.com/documentation/development-kitsboards)
 * [Cypress Semiconductor, an Infineon Technologies Company](https://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox&trade;](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2022.
+© Infineon Technologies AG or an affiliate of Infineon Technologies AG, 2022-2026.

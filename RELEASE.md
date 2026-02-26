@@ -1,6 +1,9 @@
 # ModusToolbox CAT2 BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.6.0
+* Add support for PSOC4 HVPA SPM 1.0 part
+* Fix incorrect selection of linker scripts during migration to new MCU in BSP Assistant for PSOC 4100T Plus.
 #### v1.5.0
 * Removed HAL support for PSOC4HVMS parts
 * Updated version of startup_* files
@@ -27,18 +30,18 @@ This version of mtb-template-cat2 was validated for compatibility with the follo
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox™ Software Environment        | 3.0.0   |
-| GCC Compiler                              | 10.3.1  |
-| IAR Compiler                              | 9.40.2  |
-| ARM Compiler                              | 6.11    |
+| ModusToolbox&trade; Software Environment  | 3.7.0   |
+| GCC Compiler                              | 14.2.1  |
+| IAR Compiler                              | 9.50.2  |
+| ARM Compiler                              | 6.22    |
 
-Minimum required ModusToolbox™ Software Environment: v3.0.0
+Minimum required ModusToolbox&trade; Software Environment: v3.0.0
 
 ### More information
 * [Development Board Documentation](https://www.cypress.com/documentation/development-kitsboards)
 * [Cypress Semiconductor, an Infineon Technologies Company](https://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
-* [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox&trade;](https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software)
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2022-2025.
+© Infineon Technologies AG or an affiliate of Infineon Technologies AG, 2022-2026.

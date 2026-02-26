@@ -2,7 +2,7 @@
     "core": {
         "id": "ccbd0782-7dd0-5d63-9321-d15678eb0b48",
         "name": "mtb-template-cat2",
-        "version": "1.5.0.47033"
+        "version": "1.6.0.49315"
     },
     "opt": {
         "props": {
@@ -121,14 +121,47 @@
                     },
                     "udd_key": "Flash_KB"
                 },
-                "PSOC4NEXT": {
-                    "defines": "cat2_hal_defines",
+                "PSOC4HVPAPPM": {
+                    "defines": [],
                     "deps": "cat2_dependencies",
                     "files": [
                         "filelist/cat2.txt",
-                        "filelist/psoc4next.txt"
+                        "filelist/cy8c41x7xhvpappm.txt"
                     ],
-                    "files_init": "filelist/init_psoc4next.txt"
+                    "files_init": "filelist/init_psoc4hvpaspm1.txt"
+                },
+                "PSOC4NEXT": {
+                    "128": {
+                        "16": {
+                            "defines": "cat2_hal_defines",
+                            "deps": "cat2_dependencies",
+                            "files": [
+                                "filelist/cat2.txt",
+                                "filelist/cy8c4147.txt"
+                            ],
+                            "files_init": "filelist/init_psoc4next.txt"
+                        },
+                        "32": {
+                            "defines": "cat2_hal_defines",
+                            "deps": "cat2_dependencies",
+                            "files": [
+                                "filelist/cat2.txt",
+                                "filelist/cy8c41x7t.txt"
+                            ],
+                            "files_init": "filelist/init_psoc4next.txt"
+                        },
+                        "udd_key": "SRAM_KB"
+                    },
+                    "64": {
+                        "defines": "cat2_hal_defines",
+                        "deps": "cat2_dependencies",
+                        "files": [
+                            "filelist/cat2.txt",
+                            "filelist/cy8c41x6t.txt"
+                        ],
+                        "files_init": "filelist/init_psoc4next.txt"
+                    },
+                    "udd_key": "Flash_KB"
                 },
                 "PSoC4AMC": {
                     "128": {
