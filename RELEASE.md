@@ -1,6 +1,12 @@
 # ModusToolbox CAT2 BSP Template Library Release Notes
 
 ### What Changed?
+#### v1.7.0
+* Add support for PMG1-B2.
+* Fixed the GNU GCC linker templates to mark  the `.copy.table` and `.zero.table` sections
+  as `READONLY`. This clears the write flag so the flash LOAD segment is no longer reported with
+  read/write/execute (RWX) permissions, removing the "LOAD segment with RWX permissions" warning
+  emitted by GNU Binutils 2.39 and later.
 #### v1.6.0
 * Add support for PSOC4 HVPA SPM 1.0 part
 * Fix incorrect selection of linker scripts during migration to new MCU in BSP Assistant for PSOC 4100T Plus.
@@ -30,7 +36,7 @@ This version of mtb-template-cat2 was validated for compatibility with the follo
 
 | Software and Tools                        | Version |
 | :---                                      | :----:  |
-| ModusToolbox&trade; Software Environment  | 3.7.0   |
+| ModusToolbox&trade; Software Environment  | 3.8.0   |
 | GCC Compiler                              | 14.2.1  |
 | IAR Compiler                              | 9.50.2  |
 | ARM Compiler                              | 6.22    |

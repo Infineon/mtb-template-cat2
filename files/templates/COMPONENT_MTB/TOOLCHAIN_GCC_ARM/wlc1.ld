@@ -1,6 +1,6 @@
 /***************************************************************************//**
 * \file wlc1.ld
-* \version 2.0.0
+* \version 2.0.1
 *
 * Linker file for the GNU C compiler.
 *
@@ -162,7 +162,7 @@ SECTIONS
     } > FLASH
     __exidx_end = .;
 
-    .copy.table :
+    .copy.table (READONLY) :
     {
         . = ALIGN(4);
         __copy_table_start__ = .;
@@ -175,7 +175,7 @@ SECTIONS
         __copy_table_end__ = .;
     } > FLASH
 
-    .zero.table :
+    .zero.table (READONLY) :
     {
         . = ALIGN(4);
         __zero_table_start__ = .;

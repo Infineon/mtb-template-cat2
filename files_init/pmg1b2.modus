@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration app="BACKEND" formatVersion="15" lastSavedWith="Configurator Backend" lastSavedWithVersion="3.80.0" toolsPackage="ModusToolbox 3.8.0" xmlns="http://cypress.com/xsd/cydesignfile_v7">
+    <Devices>
+        <Device mpn="CYPM1216-68LQXI">
+            <BlockConfig>
+                <Personality template="m0s8sysclocks" version="2.0" instance="qLiIPP_WRgo">
+                    <Block location="srss[0].clock[0]" locked="true"/>
+                </Personality>
+                <Personality template="m0s8hfclk" version="3.0" instance="5JuegL3SgrM">
+                    <Block location="srss[0].clock[0].hfclk[0]" locked="true"/>
+                    <Parameters>
+                        <Param id="divider" value="1"/>
+                        <Param id="sourceClock" value="IMO"/>
+                    </Parameters>
+                </Personality>
+                <Personality template="m0s8imo" version="1.0" instance="1JDwjEprqDA">
+                    <Block location="srss[0].clock[0].imo[0]" locked="true"/>
+                    <Parameters>
+                        <Param id="frequency" value="48000000"/>
+                        <Param id="trim" value="2"/>
+                    </Parameters>
+                </Personality>
+                <Personality template="m0s8sysclk" version="1.0" instance="gwWfAGdHrA8">
+                    <Block location="srss[0].clock[0].sysclk[0]" locked="true"/>
+                    <Parameters>
+                        <Param id="divider" value="1"/>
+                    </Parameters>
+                </Personality>
+            </BlockConfig>
+            <Netlist/>
+        </Device>
+    </Devices>
+</Configuration>
